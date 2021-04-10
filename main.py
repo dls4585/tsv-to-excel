@@ -21,7 +21,7 @@ if __name__ == "__main__":
     l = []
 
     for file in tqdm(root.filenames, desc="전체 진행률", position=0, leave=True):
-        f = open(file, 'r')
+        f = open(file, 'rt', encoding="UTF8")
         if not f:
             print("cannot open " + file)
             continue
